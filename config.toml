@@ -1,0 +1,128 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "CreativeVanLife"
+theme = "parsa-hugo"
+summaryLength = "10"
+paginate = 6
+
+[outputs]
+  home = ["HTML", "AMP", "RSS", "JSON"]
+  page = ["HTML"]
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  URL = "plugins/themify-icons/themify-icons.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/slick/slick.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/headroom/headroom.js"
+  [[params.plugins.js]]
+  URL = "plugins/instafeed/instafeed.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/masonry/masonry.js"
+  [[params.plugins.js]]
+  URL = "plugins/reading-time/readingTime.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/smooth-scroll/smooth-scroll.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/fuse.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/mark.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/search.js"
+  
+
+  
+# navigation
+[menu]
+    
+  [[menu.main]]
+  name = "About"
+  URL = "about"
+  weight = 2
+  
+  [[menu.main]]
+  name = "Contact"
+  URL = "contact"
+  weight = 3
+
+
+[params]
+logo = "images/logo.png"
+home = "Home"
+# hompage layout ( two layout is available,  you can set the another layout by change the value of homeLayoutToggle "true" to "false")
+homeLayoutToggle = true
+# Meta data
+description = "Van blog, Travel, How to, "
+# about author
+author = "CreativeVanLife"
+authorImage = "images/banner-img.png"
+shortDescription = "Just two people that love to travel."
+# Contact Form Action
+contactFormAction = "#"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+# copyright
+copyright = "by [CreativeVanLife](CreativeVanLife)"
+
+  # Preloader
+  [params.preloader]
+  enable = true
+  
+  # search
+  [params.search]
+  enable = true
+
+  # Instagram feed
+  [params.instafeed]
+  enable = true
+  userID = "11302973426"
+  accessToken = "11302973426.ef3e117.c08a2cf703544d869c095c21efbeb48a"
+
+  # footer
+  [params.footer]
+
+    #address
+    [[params.footer.addresses]]
+    address = "Where the wind takes us!"
+    
+
+    #contact information
+    
+    [[params.footer.contacts]]
+    contactInfo = "Email: CreativeVanLife@gmail.com"
+
+
+  # social site
+  [[params.social]]
+  icon = "ti-facebook"
+  URL = ""
+  
+  [[params.social]]
+  icon = "ti-twitter-alt"
+  URL = "#"
+  
+  [[params.social]]
+  icon = "ti-linkedin"
+  URL = "#"
+  
+  [[params.social]]
+  icon = "ti-github"
+  URL = "#"
+
+  [[params.social]]
+  icon = "ti-instagram"
+  URL = "https://www.instagram.com/creative.van.life/"
